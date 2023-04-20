@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    [dg-cloak] {
+        display: none !important;
+    }
+    #github-link {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        font-size: 20px;
+    }
+</style>
+<script type="module" crossorigin="anonymous" src="https://assets.codepen.io/5782383/dagger.release.js" defer></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap'><link rel="stylesheet" href="/assets/css/Faculty.css">
+<!-- <link rel="stylesheet" href="/assets/css/style.css"/> -->
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Forked from: https://codepen.io/ykadosh/pen/ZEJLapj -->
+<!-- document: https://daggerjs.org -->
+<script type="dagger/configs">
+  {
+    "_": "https://codepen.io/dagger8224/pen/JjLRbmz.js"
+  }
+</script>
+<div class="app" dg-cloak +loading="loading()">
+    <div class="carousel" +loading="{ active: 2 }">
+        <i class="nav left fas fa-chevron-circle-left" $exist="active > 0" +click="active--"></i>
+      <div class="card-container" $each="new Array(CARDS)" $style="styleWatcher(active, index)">
+        <div class="card">
+
+          <h2>Prof. Avinash J Agrawal</h2>
+          <p>
+            Associate Professor & Head of Department, Department of Computer Science & Engineering
+            
+            Total Experience in Years - Teaching : 23.8 / Industrial : 0.0 / Research : 0.0    
+            Subject Specialization : Information Retrieval, NLP, Pattern Recognition Compiling for High Performance Architecture, Language Processors, Artificial Intelligence, Theoretical Computation, Mobile Application Design
+            
+            Grants Fetched : AICTE Travel Grant in 2008
+            
+            
+            Awards : Received "Distinguished Associate Professor" award by CSI Mumbai Chapter in 2017 at IIT Mumbai.</p>
+        </div>
+      </div>
+      <i class="nav right fas fa-chevron-circle-right" $exist="active < CARDS - 1" +click="active++"></i>
+      
+    </div>
+  </div>
+<!-- partial -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script type="module" src="/assets/js/Faculty.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <!-- <script src="/assets/js/script2.js"></script> -->
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<!-- <script src="/assets/js/script.js"></script> -->
+</body>
+</html>
